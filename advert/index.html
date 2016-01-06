@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green-Acres | Advert</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="../webroot/js/global.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Popup Gallery -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="../webroot/css/bootstrap-image-gallery.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="../webroot/js/bootstrap-image-gallery.min.js"></script>
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="../webroot/css/style.css">
+</head>
+<body>
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery modal-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <header class="home other-pages">
+        <section class="container-fluid">
+            <div class="header-row row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h1 class="logo"><a href="../"><img src="../webroot/img/logo-color.png"><span>.com</span></a></h1>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 search-input">
+                    <label for="search"><span class="icons-sprite icon-search"></span></label>
+                    <input id="search" type="search" placeholder="Dordogne, France">
+                </div>
+                <nav class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right">
+                    <button class="btn-personal-area"><span class="icons-sprite"></span>Personal area</button>
+                    <div class="component-list">
+                        <button class="btn-language">Language<span class="icons-sprite"></span></button>
+                        <div class="options-list">
+                            <p class="option"><a href="../advert/">EN</a></p>
+                            <p class="option"><a href="../ru/advert/">RU</a></p>
+                            <p class="option">FR</p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <section class="item-photo-prev">
+        <img class="item-photo" src="../webroot/img/item-img-prev.jpg">
+    </section>
+    <section class="item-params">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                        <img class="seller-photo" src="../webroot/img/seller-photo.png">
+                        <h3 class="seller-name">Astrid Thomas</h3>
+                    </div>
+                    <div class="item-info col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                        <h2 class="item-title">
+                            Girondine house in perfect condition with pool
+                        </h2>
+                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Dordogne, France</p>
+                        <div class="item-details">
+                            <ul>
+                                <li class="details-component">
+                                    <span class="icons-sprite icon-house-square"></span>
+                                    <p class="details-name">Habitable surface</p>
+                                    120m<span class="sub">2</span>
+                                </li>
+                                <li class="details-component">
+                                    <span class="icons-sprite icon-territory-square"></span>
+                                    <p class="details-name">Land</p>
+                                    2320m<span class="sub">2</span>
+                                </li>
+                                <li class="details-component">
+                                    <span class="icons-sprite icon-room"></span>
+                                    <p class="details-name">Rooms</p>
+                                    6
+                                </li>
+                                <li class="details-component">
+                                    <span class="icons-sprite icon-bedroom"></span>
+                                    <p class="details-name">Bedrooms</p>
+                                    2
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+                    <aside class="float-form" data-spy="affix" data-offset-top="400" data-offset-bottom="800">
+                        <p class="form-price">
+                            <span class="symbol">&euro;</span>371,000
+                        </p>
+                        <div class="form-content">
+                            <p class="form-details">
+                                <span class="form-reference">Reference: 9023a-15590</span>
+                                <span class="form-text form-notice">Legal notice</span>
+                            </p>
+                            <form>
+                                <input type="text" class="standard-input" placeholder="Your name">
+                                <input type="text" class="standard-input" placeholder="Your telephone number">
+                                <input type="text" class="standard-input" placeholder="Your email">
+                                <p class="form-text">You would like...</p>
+                                <div class="checkbox-group">
+                                    <div class="group-part">
+                                        <label class="form-text">
+                                            <input type="checkbox">
+                                            <span class="custom-checkbox"></span>
+                                            To be contacted
+                                        </label>
+                                        <label class="form-text">
+                                            <input type="checkbox">
+                                            <span class="custom-checkbox"></span>
+                                            More photos
+                                        </label>
+                                    </div>
+                                    <div class="group-part">
+                                        <label class="form-text">
+                                            <input type="checkbox">
+                                            <span class="custom-checkbox"></span>
+                                            To visit
+                                        </label>
+                                        <label class="form-text">
+                                            <input type="checkbox">
+                                            <span class="custom-checkbox"></span>
+                                            More information
+                                        </label>
+                                    </div>
+                                </div>
+                                <textarea class="standard-input" placeholder="Your message" val=""></textarea>
+                                <div class="checkbox-group">
+                                    <div class="group-part">
+                                        <label class="form-text">
+                                            <input type="checkbox">
+                                            <span class="custom-checkbox"></span>
+                                            Email alert on similar properties.
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="btn-send">Contact the seller</button>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="item-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+                    <div class="item-content-part">
+                        <h2 class="title-standard">Property summary</h2>
+                        <p class="text">
+                            Part of a wine estate, this Girondine house is presented with 2 hectares of land, and makes for a wonderful family home with an excellent business potential. The house has been renovated and is comprised of 5 bedrooms and several reception rooms, terrace and a swimming pool, as well as a large dependence. The dependence could be converted into a further accommodation, a gîte or several guest rooms. Surrounded by vines, there is a private access to the house separating it from the vineyard activity.
+                        </p>
+                    </div>
+                    <div class="item-content-part main-characteristics">
+                        <h2 class="title-standard">Main characteristics</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span class="icons-sprite icon-house-small"></span>170 m<span class="sub">2</span> of habitable surface (1830 sqFt)
+                                </p>
+                                <p>
+                                    <span class="icons-sprite icon-territory-small"></span>2 hectares of land (4.95 acres)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="icons-sprite icon-room-small"></span>6 rooms
+                                </p>
+                                <p>
+                                    <span class="icons-sprite icon-bedroom-small"></span>5 bedrooms
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="icons-sprite icon-sun-small"></span>Oil-fired central heating
+                                </p>
+                                <p>
+                                    <span class="icons-sprite icon-good-small"></span>Good structural condition
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-content-part item-ecology">
+                        <div class="ecology-part">
+                            <h2 class="title-standard">Energy consumption</h2>
+                            <p class="text img-descr">Economic residence</p>
+                            <div>
+                                <img src="../webroot/img/img-left-1.png">
+                                <img src="../webroot/img/img-left-right-2.png">
+                            </div>
+                            <p class="text img-descr">High energy consumption residence</p>
+                            <p class="text">
+                                Energy consumption (main energy source) for heating, hot water
+                                and cooling  Measurement standard: KWhep/m².year
+                                (NC: not calculated)
+                            </p>
+                        </div>
+                        <div class="ecology-part">
+                            <h2 class="title-standard">Greenhouse gas emissions</h2>
+                            <p class="text img-descr">Low greenhouse gas output</p>
+                            <div>
+                                <img src="../webroot/img/img-right-1.png">
+                                <img src="../webroot/img/img-left-right-2.png">
+                            </div>
+                            <p class="text img-descr">High greenhouse gas output</p>
+                            <p class="text">
+                                Greenhouse gas emissions (GGS) for heating, hot water and cooling
+                                systems Measurement standard: kgeqCO2/m2.year
+                                (NC: not calculated)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-content-part">
+                        <h2 class="title-standard">Photos <span class="more-photos">See all photos</span></h2>
+                        <div id="photos-carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox" id="links">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <div class="left-slide">
+                                            <a href="/webroot/img/g-1.jpg" data-gallery>
+                                                <img src="../webroot/img/g-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="center-slide">
+                                            <a href="/webroot/img/g-2.jpg" data-gallery>
+                                                <img src="../webroot/img/g-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="right-slide">
+                                            <a href="/webroot/img/g-3.jpg" data-gallery>
+                                                <img src="../webroot/img/g-3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <div class="left-slide">
+                                            <a href="/webroot/img/g-1.jpg" data-gallery>
+                                                <img src="../webroot/img/g-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="center-slide">
+                                            <a href="/webroot/img/g-2.jpg" data-gallery>
+                                                <img src="../webroot/img/g-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="right-slide">
+                                            <a href="/webroot/img/g-3.jpg" data-gallery>
+                                                <img src="../webroot/img/g-3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#photos-carousel" role="button" data-slide="prev">
+                                <span class="icons-sprite icon-arrow-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#photos-carousel" role="button" data-slide="next">
+                                <span class="icons-sprite icon-arrow-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-content-part price">
+                        <h2 class="title-standard">Price <span class="price">&euro; 371,000</span></h2>
+                        <p class="text price-text">Price / sq metre: €/m<span class="sub">2</span> 2,182.35</p>
+                        <p class="text price-text">Price includes agency fees, but excludes notary, registration and land registration fees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="similar">
+        <div class="container-fluid">
+            <h2 class="title-standard"> Similar adverts</h2>
+            <div id="featured-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="slide-content">
+                            <div class="left-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="../webroot/img/item-img-1.jpg">
+                                        <p class="item-price">&euro; 371,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Girondine house in perfect</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Lamothe-Montravel</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="../webroot/img/item-photo-1.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>120m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>2320m<span class="sub">2</span><span class="details-tip">Land</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>6<span class="details-tip">Rooms</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>2<span class="details-tip">Bedrooms</span></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="center-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="../webroot/img/item-img-2.jpg">
+                                        <p class="item-price">&euro; 689,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Chateau and vineyard</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Saint-Macaire-du-Bois</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="../webroot/img/item-photo-2.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>160m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>1210m<span class="sub">8</span><span class="details-tip">Land</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>8<span class="details-tip">Rooms</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>4<span class="details-tip">Bedrooms</span></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="right-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="../webroot/img/item-img-3.jpg">
+                                        <p class="item-price">&euro; 1,055,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Stunning Chartreuse offering</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Bergerac</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="../webroot/img/item-photo-3.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>180m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>750m<span class="sub">8</span><span class="details-tip">Land</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>6<span class="details-tip">Rooms</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>3<span class="details-tip">Bedrooms</span></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="slide-content">
+                            <div class="left-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="../webroot/img/item-img-1.jpg">
+                                        <p class="item-price">&euro; 371,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Girondine house in perfect</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Lamothe-Montravel</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="../webroot/img/item-photo-1.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>120m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>2320m<span class="sub">2</span><span class="details-tip">Land</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>6<span class="details-tip">Rooms</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>2<span class="details-tip">Bedrooms</span></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="center-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="../webroot/img/item-img-2.jpg">
+                                        <p class="item-price">&euro; 689,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Chateau and vineyard</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Saint-Macaire-du-Bois</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="../webroot/img/item-photo-2.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>160m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>1210m<span class="sub">8</span><span class="details-tip">Land</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>8<span class="details-tip">Rooms</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>4<span class="details-tip">Bedrooms</span></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="right-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="../webroot/img/item-img-3.jpg">
+                                        <p class="item-price">&euro; 1,055,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Stunning Chartreuse offering</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Bergerac</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="../webroot/img/item-photo-3.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>180m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>750m<span class="sub">8</span><span class="details-tip">Land</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>6<span class="details-tip">Rooms</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>3<span class="details-tip">Bedrooms</span></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#featured-carousel" role="button" data-slide="prev">
+                    <span class="icons-sprite icon-arrow-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#featured-carousel" role="button" data-slide="next">
+                    <span class="icons-sprite icon-arrow-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="breadcrumbs-area">
+                        <ol class="breadcrumb">
+                            <li><a href="#">France</a></li>
+                            <li><a href="#">Île-de-France</a></li>
+                            <li class="active">Paris</li>
+                        </ol>
+                        <div class="small-nav">
+                            <p>More places for sale in Paris:</p>
+                            <ul>
+                                <li>Apartments</li>
+                                <li>Houses</li>
+                                <li>Bed & Breakfasts</li>
+                                <li>Lofts</li>
+                                <li>Villas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li class="f-nav-item"><a href="#">About the Company</a></li>
+                            <li class="f-nav-item"><a href="#">Help</a></li>
+                            <li class="f-nav-item"><a href="#">Registration</a></li>
+                            <li class="f-nav-item"><a href="#">Cities</a></li>
+                            <li class="f-nav-item"><a href="#">Add your advert</a></li>
+                            <li class="f-nav-item"><a href="#">Buy</a></li>
+                            <li class="f-nav-item"><a href="#">Rentals</a></li>
+                            <li class="f-nav-item"><a href="#">My adverts</a></li>
+                            <li class="f-nav-item"><a href="#">Agency Directory</a></li>
+                            <li class="f-nav-item"><a href="#">Support</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-left">
+                    <button class="btn-recruiting"><span class="icons-sprite icon-recruiting"></span>We are recruiting!</button>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right">
+                    <p class="join-us">Join Us On:</p>
+                    <ul class="social">
+                        <li><a href="#"><span class="icons-sprite icon-google"></span></a></li>
+                        <li><a href="#"><span class="icons-sprite icon-twitter"></span></a></li>
+                        <li><a href="#"><span class="icons-sprite icon-facebook"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <hr class="footer-divider">
+                    <p class="powered">
+                        Powered by Green-Acres.com © 2004-2015
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green-Acres | Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="webroot/js/global.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="webroot/css/style.css">
+</head>
+<body>
+    <header class="home">
+        <section class="container-fluid">
+            <div class="header-row row">
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                    <h1 class="logo"><img src="webroot/img/logo.png"><span>.com</span></h1>
+                </div>
+                <nav class="col-xs-12 col-sm-7 col-md-7 col-lg-8 text-right">
+                    <button class="btn-personal-area"><span class="icons-sprite"></span>Personal area</button>
+                    <button class="btn-sell"><span class="icons-sprite"></span>Sell you house!</button>
+                    <div class="component-list">
+                        <button class="btn-language">Language<span class="icons-sprite"></span></button>
+                        <div class="options-list">
+                            <p class="option"><a href="/">EN</a></p>
+                            <p class="option"><a href="ru/">RU</a></p>
+                            <p class="option">FR</p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-content row">
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 titles-group">
+                    <h1 class="title">Property France</h1>
+                    <h3 class="subtitle">87 654 houses for sale</h3>
+                </div>
+                <div class="col-xs-offset-0 col-sm-offset-5 col-md-offset-5 col-lg-offset-5  col-xs-12 col-sm-5 col-md-5 col-lg-5 text-right">
+                    <img src="webroot/img/map-cities.png">
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 text-right">
+                    <img src="webroot/img/map-europe.png">
+                </div>
+            </div>
+        </section>
+        <section class="search-row">
+            <div class="container-fluid">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="custom-radio">
+                        <label>
+                            <input type="radio" name="type-of-choice" id="choice-buy" value="buy" checked>
+                            <span class="radio-checker"></span>
+                            Buy
+                        </label>
+                    </div>
+                    <div class="custom-radio">
+                        <label>
+                            <input type="radio" name="type-of-choice" id="choice-rent" value="rent">
+                            <span class="radio-checker"></span>
+                            Rent
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 search-line">
+                    <div class="search-line-component component-location">
+                        <span class="icons-sprite icon-location"></span>
+                        <input type="text" class="search-par" placeholder="Search Location">
+                    </div>
+                    <div class="search-line-component component-apartment component-list">
+                        <span class="icons-sprite icon-apartment"></span>
+                        <p class="search-par component-selected">Appartament, Maison/Villa</p>
+                        <div class="options-list">
+                            <p class="option">Appartament, Maison/Villa1</p>
+                            <p class="option">Appartament, Maison/Villa2</p>
+                            <p class="option">Appartament, Maison/Villa3</p>
+                        </div>
+                        <span class="icons-sprite icon-list"></span>
+                    </div>
+                    <div class="search-line-component component-budget">
+                        <span class="icons-sprite icon-budget">Budget</span>
+                        <input type="text" class="search-par" placeholder="Min">
+                        <span class="icons-sprite icon-budget-arrow"></span>
+                        <input type="text" class="search-par" placeholder="Max">
+                    </div>
+                    <div class="search-line-component component-currency component-list">
+                        <p class="search-par component-selected">EUR</p>
+                        <div class="options-list">
+                            <p class="option">USD</p>
+                            <p class="option">FRN</p>
+                            <p class="option">PLN</p>
+                        </div>
+                        <span class="icons-sprite icon-list"></span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                    <button class="btn-search">SEARCH</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <aside class="main-aside">
+        <div class="container-fluid">
+            <h2 class="title-standard">Green-acres,</h2>
+            <p class="text"> it is the story of the independant website who decided to translate its 140,000 adverts in 12 countries into 18 languages.<br>
+                So as everyone could find its dream house, and live there happily ever after.<span class="learn-more">LEARN MORE<b class="icons-sprite icon-more"></b></span></p>
+        </div>
+    </aside>
+    <section class="featured">
+        <div class="container-fluid">
+            <h2 class="title-standard">Featured Properties</h2>
+            <div id="featured-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="slide-content">
+                            <div class="left-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="webroot/img/item-img-1.jpg">
+                                        <p class="item-price">&euro; 371,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Girondine house in perfect</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Lamothe-Montravel</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="webroot/img/item-photo-1.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>120m<span class="sub">2</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>2320m<span class="sub">2</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>6</li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>2</li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="center-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="webroot/img/item-img-2.jpg">
+                                        <p class="item-price">&euro; 689,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Chateau and vineyard</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Saint-Macaire-du-Bois</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="webroot/img/item-photo-2.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>160m<span class="sub">2</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>1210m<span class="sub">8</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>8</li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>4</li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="right-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="webroot/img/item-img-3.jpg">
+                                        <p class="item-price">&euro; 1,055,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Stunning Chartreuse offering</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Bergerac</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="webroot/img/item-photo-3.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>180m<span class="sub">2</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>750m<span class="sub">8</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>6</li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>3</li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="slide-content">
+                            <div class="left-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="webroot/img/item-img-1.jpg">
+                                        <p class="item-price">&euro; 371,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Girondine house in perfect</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Lamothe-Montravel</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="webroot/img/item-photo-1.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>120m<span class="sub">2</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>2320m<span class="sub">2</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>6</li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>2</li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="center-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="webroot/img/item-img-2.jpg">
+                                        <p class="item-price">&euro; 689,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Chateau and vineyard</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Saint-Macaire-du-Bois</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="webroot/img/item-photo-2.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>160m<span class="sub">2</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>1210m<span class="sub">8</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>8</li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>4</li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="right-slide">
+                                <figure class="item-main">
+                                    <div class="photo-area">
+                                        <img class="item-img" src="webroot/img/item-img-3.jpg">
+                                        <p class="item-price">&euro; 1,055,000</p>
+                                        <div class="item-favourite">
+                                            <span class="icons-sprite icon-favourite"></span>
+                                        </div>
+                                    </div>
+                                    <figcaption class="descr-area">
+                                        <h3 class="item-title">Stunning Chartreuse offering</h3>
+                                        <p class="item-location"><span class="icons-sprite icon-item-location"></span>Bergerac</p>
+                                        <div class="item-photo-area">
+                                            <img class="item-photo" src="webroot/img/item-photo-3.png">
+                                        </div>
+                                        <hr class="item-divider">
+                                        <div class="item-details">
+                                            <ul>
+                                                <li class="details-component"><span class="icons-sprite icon-house-square"></span>180m<span class="sub">2</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-territory-square"></span>750m<span class="sub">8</span></li>
+                                                <li class="details-component"><span class="icons-sprite icon-room"></span>6</li>
+                                                <li class="details-component"><span class="icons-sprite icon-bedroom"></span>3</li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#featured-carousel" role="button" data-slide="prev">
+                    <span class="icons-sprite icon-arrow-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#featured-carousel" role="button" data-slide="next">
+                    <span class="icons-sprite icon-arrow-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="property">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h2 class="title-standard">Property in France</h2>
+                <h3 class="subtitle">The best place to search for French property</h3>
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum tellus ut neque euismod, eu pretium augue bibendum. Sed massa neque, commodo ac congue in, tristique et lacus. Nullam malesuada ullamcorper nunc, non sollicitudin ligula scelerisque vel. Praesent ut gravida justo, eget fringilla dolor.
+                    <br><br>
+                    Nullam ut purus ullamcorper, euismod sem a, lacinia lectus. Phasellus id est eleifend, facilisis est quis, ullamcorper est. Suspendisse sit amet consequat urna. Aliquam sed molestie dui, nec facilisis nunc.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right">
+                <img src="webroot/img/property.jpg">
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="properties">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tabs-area">
+                    <ul class="property-tabs">
+                        <a data-toggle="pill" href="#id1" class="prop-tab"><li>Property in<br><span>Normandy</span></li></a>
+                        <a data-toggle="pill" href="#id2" class="prop-tab active-tab"><li>Property in<br><span>Brittany</span></li></a>
+                        <a data-toggle="pill" href="#id3" class="prop-tab"><li>Property in<br><span>French Riviera</span></li></a>
+                        <a data-toggle="pill" href="#id4" class="prop-tab"><li>Property in<br><span>Languedoc</span></li></a>
+                        <a data-toggle="pill" href="#id5" class="prop-tab"><li>Property in<br><span>Loire Valley</span></li></a>
+                    </ul>
+                </div>
+                <div class="tab-content prop-tabs-content">
+                    <div id="id1" class="tab-pane fade">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                            <img src="webroot/img/prop.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                            <p class="text">
+                            One of France's most rugged regions, you can find property in Brittany along its spectacular coastline, Brittany property in ancient towns, on magical islands and charming Brittany property in its vast woods.
+                            <br><br>
+                            A Celtic duchy for more than one thousand years its annexation to France in 1532, it is a land rich in culture, tradition and history which is reflected in the architecture of the property in Brittany.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="id2" class="tab-pane fade active in">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                            <img src="webroot/img/property.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                            <p class="text">
+                                One of France's most rugged regions, you can find property in Brittany along its spectacular coastline, Brittany property in ancient towns, on magical islands and charming Brittany property in its vast woods.
+                                <br><br>
+                                A Celtic duchy for more than one thousand years its annexation to France in 1532, it is a land rich in culture, tradition and history which is reflected in the architecture of the property in Brittany.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="id3" class="tab-pane fade">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                            <img src="webroot/img/prop.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                            <p class="text">
+                                One of France's most rugged regions, you can find property in Brittany along its spectacular coastline, Brittany property in ancient towns, on magical islands and charming Brittany property in its vast woods.
+                                <br><br>
+                                A Celtic duchy for more than one thousand years its annexation to France in 1532, it is a land rich in culture, tradition and history which is reflected in the architecture of the property in Brittany.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="id4" class="tab-pane fade">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                            <img src="webroot/img/property.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                            <p class="text">
+                                One of France's most rugged regions, you can find property in Brittany along its spectacular coastline, Brittany property in ancient towns, on magical islands and charming Brittany property in its vast woods.
+                                <br><br>
+                                A Celtic duchy for more than one thousand years its annexation to France in 1532, it is a land rich in culture, tradition and history which is reflected in the architecture of the property in Brittany.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="id5" class="tab-pane fade">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                            <img src="webroot/img/prop.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                            <p class="text">
+                                One of France's most rugged regions, you can find property in Brittany along its spectacular coastline, Brittany property in ancient towns, on magical islands and charming Brittany property in its vast woods.
+                                <br><br>
+                                A Celtic duchy for more than one thousand years its annexation to France in 1532, it is a land rich in culture, tradition and history which is reflected in the architecture of the property in Brittany.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="commercial">
+        <div class="skew">
+            <div class="left-skew">
+                <div class="bg">
+                    <div class="low-tr"></div>
+                </div>
+            </div>
+            <div class="right-skew">
+                <div class="bg">
+                    <div class="low-tr"></div>
+                </div>
+            </div>
+        </div>
+        <div class="commercial-content-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-left skew-normal">
+                        <div class="commercial-cont">
+                            <h3 class="subtitle">Are you a real estate agency and<br>
+                                want to advertise your properties?</h3>
+                            <button class="btn-commercial">CLICK HERE</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right skew-normal">
+                        <div class="commercial-cont">
+                            <h3 class="subtitle">
+                                Are you a private owner and<br>
+                                want to sell or rent your property?
+                            </h3>
+                            <button class="btn-commercial">CLICK HERE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="more-properties">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul class="properties-list">
+                        <li>Property France</li>
+                        <li>Property Italy</li>
+                        <li>Property Spain</li>
+                        <li>Property Portugal</li>
+                        <li>Property Greece</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li class="f-nav-item"><a href="#">About the Company</a></li>
+                            <li class="f-nav-item"><a href="#">Help</a></li>
+                            <li class="f-nav-item"><a href="#">Registration</a></li>
+                            <li class="f-nav-item"><a href="#">Cities</a></li>
+                            <li class="f-nav-item"><a href="#">Add your advert</a></li>
+                            <li class="f-nav-item"><a href="#">Buy</a></li>
+                            <li class="f-nav-item"><a href="#">Rentals</a></li>
+                            <li class="f-nav-item"><a href="#">My adverts</a></li>
+                            <li class="f-nav-item"><a href="#">Agency Directory</a></li>
+                            <li class="f-nav-item"><a href="#">Support</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-left">
+                    <button class="btn-recruiting"><span class="icons-sprite icon-recruiting"></span>We are recruiting!</button>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right">
+                    <p class="join-us">Join Us On:</p>
+                    <ul class="social">
+                        <li><a href="#"><span class="icons-sprite icon-google"></span></a></li>
+                        <li><a href="#"><span class="icons-sprite icon-twitter"></span></a></li>
+                        <li><a href="#"><span class="icons-sprite icon-facebook"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <hr class="footer-divider">
+                    <p class="powered">
+                        Powered by Green-Acres.com © 2004-2015
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green-Acres | Listing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="../../webroot/js/global.js"></script>
+    <script src="../../webroot/js/filters.js"></script>
+    <script src="../../webroot/js/numeric.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../webroot/css/style.css">
+</head>
+<body>
+    <header class="home other-pages">
+        <section class="container-fluid">
+            <div class="header-row row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h1 class="logo"><a href="../"><img src="../../webroot/img/logo-color.png"><span>.com</span></a></h1>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 search-input">
+                    <label for="search"><span class="icons-sprite icon-search"></span></label>
+                    <input id="search" type="search" placeholder="Дордонь, Франция">
+                </div>
+                <nav class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right">
+                    <button class="btn-personal-area"><span class="icons-sprite"></span>Войти</button>
+                    <div class="component-list">
+                        <button class="btn-language">Язык<span class="icons-sprite"></span></button>
+                        <div class="options-list">
+                            <p class="option"><a href="../../listing/">EN</a></p>
+                            <p class="option"><a href="../ru/listing/">RU</a></p>
+                            <p class="option">FR</p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <section class="filters-row">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="filters">
+                    <div class="filters-content filters-title-area">
+                        <h4 class="filters-title">
+                            <span class="icons-sprite icon-filters"></span>Фильтры
+                        </h4>
+                    </div>
+                    <div class="filters-content" id="filter-1">
+                        <span class="filter-name">Бюджет</span>
+                        <div class="range-inputs">
+                            <span class="label-for-minmax">мин</span>
+                            <input type="text" class="min">
+                            <span class="label-for-minmax">макс</span>
+                            <input type="text" class="max">
+                        </div>
+                        <div class="range-slider" id="slider-1"></div>
+                        <p class="min-max-values-info">
+                            <span class="min-value-info">&euro; 0</span>
+                            <span class="max-value-info">&euro;  1.000.000+</span>
+                        </p>
+                    </div>
+                    <div class="filters-content" id="filter-2">
+                        <span class="filter-name">Жилая площадь</span>
+                        <div class="range-inputs">
+                            <span class="label-for-minmax">мин</span>
+                            <input type="text" class="min">
+                            <span class="label-for-minmax">макс</span>
+                            <input type="text" class="max">
+                        </div>
+                        <div class="range-slider" id="slider-2"></div>
+                        <p class="min-max-values-info">
+                            <span class="min-value-info">10 m<b class="sub">2</b>+</span>
+                            <span class="max-value-info">1000 m<b class="sub">2</b>+</span>
+                        </p>
+                    </div>
+                    <div class="filters-content" id="filter-3">
+                        <span class="filter-name">Количество спален</span>
+                        <div class="range-inputs">
+                            <span class="label-for-minmax">мин</span>
+                            <input type="text" class="min">
+                            <span class="label-for-minmax">макс</span>
+                            <input type="text" class="max">
+                        </div>
+                        <div class="range-slider" id="slider-3"></div>
+                        <p class="min-max-values-info">
+                            <span class="min-value-info">2</span>
+                            <span class="max-value-info">9+</span>
+                        </p>
+                    </div>
+                    <div class="filters-content filters-button-area">
+                        <button class="btn-filter"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info-row">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 info-alert">
+                    <button class="btn-alert">Создать напоминание!<span class="icons-sprite icon-alert"></span></button>
+                    <h3 class="alert-title">53 квартиры на продажу в Дордонь</h3>
+                    <div class="sorting-by">
+                        <p>Сортировка</p>
+                        <div class="component-list">
+                            <p class="component-selected">По площади<span class="icons-sprite icon-list-up"></span></p>
+                            <div class="options-list">
+                                <p class="option">По площади<span class="icons-sprite icon-list-up"></span></p>
+                                <p class="option">Любой текст<span class="icons-sprite icon-list-down"></span></p>
+                                <p class="option">Текст<span class="icons-sprite icon-list-up"></span></p>
+                            </div>
+                            <span class="icons-sprite icon-list-min"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="items-grid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="grid">
+                        <figure class="item-main">
+                            <div class="photo-area">
+                                <img class="item-img" src="../../webroot/img/item-img-1.jpg">
+                                <p class="item-price">&euro; 371,000</p>
+                                <div class="item-favourite">
+                                    <span class="icons-sprite icon-favourite"></span>
+                                </div>
+                            </div>
+                            <figcaption class="descr-area">
+                                <h3 class="item-title"><span class="add-position">[+]</span>Girondine house in perfect</h3>
+                                <p class="item-location"><span class="icons-sprite icon-item-location"></span>Lamothe-Montravel</p>
+                                <div class="item-photo-area">
+                                    <img class="item-photo" src="../../webroot/img/item-photo-1.png">
+                                </div>
+                                <hr class="item-divider">
+                                <div class="item-details">
+                                    <ul>
+                                        <li class="details-component"><span class="icons-sprite icon-house-square"></span>120m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-territory-square"></span>2320m<span class="sub">2</span><span class="details-tip">Land</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-room"></span>6<span class="details-tip">Rooms</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-bedroom"></span>2<span class="details-tip">Bedrooms</span></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item-main">
+                            <div class="photo-area">
+                                <img class="item-img" src="../../webroot/img/item-img-2.jpg">
+                                <p class="item-price">&euro; 689,000</p>
+                                <div class="item-favourite">
+                                    <span class="icons-sprite icon-favourite"></span>
+                                </div>
+                            </div>
+                            <figcaption class="descr-area">
+                                <h3 class="item-title"><span class="add-position">[+]</span>Chateau and vineyard</h3>
+                                <p class="item-location"><span class="icons-sprite icon-item-location"></span>Saint-Macaire-du-Bois</p>
+                                <div class="item-photo-area">
+                                    <img class="item-photo" src="../../webroot/img/item-photo-2.png">
+                                </div>
+                                <hr class="item-divider">
+                                <div class="item-details">
+                                    <ul>
+                                        <li class="details-component"><span class="icons-sprite icon-house-square"></span>160m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-territory-square"></span>1210m<span class="sub">8</span><span class="details-tip">Land</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-room"></span>8<span class="details-tip">Rooms</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-bedroom"></span>4<span class="details-tip">Bedrooms</span></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item-main">
+                            <div class="photo-area">
+                                <img class="item-img" src="../../webroot/img/item-img-3.jpg">
+                                <p class="item-price">&euro; 1,055,000</p>
+                                <div class="item-favourite">
+                                    <span class="icons-sprite icon-favourite"></span>
+                                </div>
+                            </div>
+                            <figcaption class="descr-area">
+                                <h3 class="item-title"><span class="add-position">[+]</span>Stunning Chartreuse offering</h3>
+                                <p class="item-location"><span class="icons-sprite icon-item-location"></span>Bergerac</p>
+                                <div class="item-photo-area">
+                                    <img class="item-photo" src="../../webroot/img/item-photo-3.png">
+                                </div>
+                                <hr class="item-divider">
+                                <div class="item-details">
+                                    <ul>
+                                        <li class="details-component"><span class="icons-sprite icon-house-square"></span>180m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-territory-square"></span>750m<span class="sub">8</span><span class="details-tip">Land</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-room"></span>6<span class="details-tip">Rooms</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-bedroom"></span>3<span class="details-tip">Bedrooms</span></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid">
+                        <figure class="item-main">
+                            <div class="photo-area">
+                                <img class="item-img" src="../../webroot/img/item-img-3.jpg">
+                                <p class="item-price">&euro; 1,055,000</p>
+                                <div class="item-favourite">
+                                    <span class="icons-sprite icon-favourite"></span>
+                                </div>
+                            </div>
+                            <figcaption class="descr-area">
+                                <h3 class="item-title"><span class="add-position">[+]</span>Stunning Chartreuse offering</h3>
+                                <p class="item-location"><span class="icons-sprite icon-item-location"></span>Bergerac</p>
+                                <div class="item-photo-area">
+                                    <img class="item-photo" src="../../webroot/img/item-photo-3.png">
+                                </div>
+                                <hr class="item-divider">
+                                <div class="item-details">
+                                    <ul>
+                                        <li class="details-component"><span class="icons-sprite icon-house-square"></span>180m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-territory-square"></span>750m<span class="sub">8</span><span class="details-tip">Land</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-room"></span>6<span class="details-tip">Rooms</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-bedroom"></span>3<span class="details-tip">Bedrooms</span></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item-main">
+                            <div class="photo-area">
+                                <img class="item-img" src="../../webroot/img/item-img-2.jpg">
+                                <p class="item-price">&euro; 689,000</p>
+                                <div class="item-favourite">
+                                    <span class="icons-sprite icon-favourite"></span>
+                                </div>
+                            </div>
+                            <figcaption class="descr-area">
+                                <h3 class="item-title"><span class="add-position">[+]</span>Chateau and vineyard</h3>
+                                <p class="item-location"><span class="icons-sprite icon-item-location"></span>Saint-Macaire-du-Bois</p>
+                                <div class="item-photo-area">
+                                    <img class="item-photo" src="../../webroot/img/item-photo-2.png">
+                                </div>
+                                <hr class="item-divider">
+                                <div class="item-details">
+                                    <ul>
+                                        <li class="details-component"><span class="icons-sprite icon-house-square"></span>160m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-territory-square"></span>1210m<span class="sub">8</span><span class="details-tip">Land</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-room"></span>8<span class="details-tip">Rooms</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-bedroom"></span>4<span class="details-tip">Bedrooms</span></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item-main">
+                            <div class="photo-area">
+                                <img class="item-img" src="../../webroot/img/item-img-1.jpg">
+                                <p class="item-price">&euro; 371,000</p>
+                                <div class="item-favourite">
+                                    <span class="icons-sprite icon-favourite"></span>
+                                </div>
+                            </div>
+                            <figcaption class="descr-area">
+                                <h3 class="item-title"><span class="add-position">[+]</span>Girondine house in perfect</h3>
+                                <p class="item-location"><span class="icons-sprite icon-item-location"></span>Lamothe-Montravel</p>
+                                <div class="item-photo-area">
+                                    <img class="item-photo" src="../../webroot/img/item-photo-1.png">
+                                </div>
+                                <hr class="item-divider">
+                                <div class="item-details">
+                                    <ul>
+                                        <li class="details-component"><span class="icons-sprite icon-house-square"></span>120m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-territory-square"></span>2320m<span class="sub">2</span><span class="details-tip">Land</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-room"></span>6<span class="details-tip">Rooms</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-bedroom"></span>2<span class="details-tip">Bedrooms</span></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid">
+                        <figure class="item-main">
+                            <div class="photo-area">
+                                <img class="item-img" src="../../webroot/img/item-img-3.jpg">
+                                <p class="item-price">&euro; 1,055,000</p>
+                                <div class="item-favourite">
+                                    <span class="icons-sprite icon-favourite"></span>
+                                </div>
+                            </div>
+                            <figcaption class="descr-area">
+                                <h3 class="item-title"><span class="add-position">[+]</span>Stunning Chartreuse offering</h3>
+                                <p class="item-location"><span class="icons-sprite icon-item-location"></span>Bergerac</p>
+                                <div class="item-photo-area">
+                                    <img class="item-photo" src="../../webroot/img/item-photo-3.png">
+                                </div>
+                                <hr class="item-divider">
+                                <div class="item-details">
+                                    <ul>
+                                        <li class="details-component"><span class="icons-sprite icon-house-square"></span>180m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-territory-square"></span>750m<span class="sub">8</span><span class="details-tip">Land</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-room"></span>6<span class="details-tip">Rooms</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-bedroom"></span>3<span class="details-tip">Bedrooms</span></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item-main">
+                            <div class="photo-area">
+                                <img class="item-img" src="../../webroot/img/item-img-2.jpg">
+                                <p class="item-price">&euro; 689,000</p>
+                                <div class="item-favourite">
+                                    <span class="icons-sprite icon-favourite"></span>
+                                </div>
+                            </div>
+                            <figcaption class="descr-area">
+                                <h3 class="item-title"><span class="add-position">[+]</span>Chateau and vineyard</h3>
+                                <p class="item-location"><span class="icons-sprite icon-item-location"></span>Saint-Macaire-du-Bois</p>
+                                <div class="item-photo-area">
+                                    <img class="item-photo" src="../../webroot/img/item-photo-2.png">
+                                </div>
+                                <hr class="item-divider">
+                                <div class="item-details">
+                                    <ul>
+                                        <li class="details-component"><span class="icons-sprite icon-house-square"></span>160m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-territory-square"></span>1210m<span class="sub">8</span><span class="details-tip">Land</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-room"></span>8<span class="details-tip">Rooms</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-bedroom"></span>4<span class="details-tip">Bedrooms</span></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item-main">
+                            <div class="photo-area">
+                                <img class="item-img" src="../../webroot/img/item-img-1.jpg">
+                                <p class="item-price">&euro; 371,000</p>
+                                <div class="item-favourite">
+                                    <span class="icons-sprite icon-favourite"></span>
+                                </div>
+                            </div>
+                            <figcaption class="descr-area">
+                                <h3 class="item-title"><span class="add-position">[+]</span>Girondine house in perfect</h3>
+                                <p class="item-location"><span class="icons-sprite icon-item-location"></span>Lamothe-Montravel</p>
+                                <div class="item-photo-area">
+                                    <img class="item-photo" src="../../webroot/img/item-photo-1.png">
+                                </div>
+                                <hr class="item-divider">
+                                <div class="item-details">
+                                    <ul>
+                                        <li class="details-component"><span class="icons-sprite icon-house-square"></span>120m<span class="sub">2</span><span class="details-tip">Habitable surface</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-territory-square"></span>2320m<span class="sub">2</span><span class="details-tip">Land</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-room"></span>6<span class="details-tip">Rooms</span></li>
+                                        <li class="details-component"><span class="icons-sprite icon-bedroom"></span>2<span class="details-tip">Bedrooms</span></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <nav class="text-center pagination-area">
+                        <p class="pagination-info">1-9 из 53 квартир на продажу</p>
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true" class="icons-sprite icon-prev"></span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true" class="icons-sprite icon-next"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="breadcrumbs-area">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Франция</a></li>
+                            <li><a href="#">Иль-де-Франс</a></li>
+                            <li class="active">Париж</li>
+                        </ol>
+                        <div class="small-nav">
+                            <p>Другие объявления на продажу в Париже:</p>
+                            <ul>
+                                <li>Квартиры</li>
+                                <li>Дома</li>
+                                <li>Хостелы</li>
+                                <li>Лофты</li>
+                                <li>Виллы</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="other-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6 text-left powered">
+                    <p class="powered">
+                        Powered by Green-Acres.com © 2004-2015
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6 text-right">
+                    <p class="join-us">Присоединяйтесь к нам в:</p>
+                    <ul class="social">
+                        <li><a href="#"><span class="icons-sprite icon-google"></span></a></li>
+                        <li><a href="#"><span class="icons-sprite icon-twitter"></span></a></li>
+                        <li><a href="#"><span class="icons-sprite icon-facebook"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
